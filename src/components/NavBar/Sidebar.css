@@ -1,0 +1,31 @@
+.sidebar {
+    margin-top: -28%;
+    visibility: visible;
+    background-color: #0060B0;
+    /*margin-right: 5px;*/
+  }
+  
+  .nav-item dropdown {
+    margin-right: 5px;
+  }
+  
+  button {
+    color: white;
+  }
+  
+  #links {
+    color: white;
+    margin-left: 5px;
+  }
+  
+  /*#item-links a {
+    color: white;
+    margin-right: 10%;
+  }*/
+  
+    @media only screen and (min-width: 499px)  {
+      .sidebar {
+        display: none;
+        visibility: collapse;
+      }
+  }
