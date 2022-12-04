@@ -1,4 +1,5 @@
-
+import React from 'react';
+import { Link } from 'react-router-dom';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
@@ -20,13 +21,20 @@ function Navigation(props) {
             border: '4px solid lightgray'
           }} /></Navbar.Brand>
           <Nav>
-            <Nav.Link id="nav-links" href="/">Home</Nav.Link>
+            <Nav.Link>
+              {''}
+              <Link id="nav-links" to="/">Home</Link>
+              </Nav.Link>
               <NavDropdown title="About" id="nav-links">
                 <Container className='dropdown-box'>
-              <NavDropdown.Item id="nav-item-links" className={currentTab === "about" ? "mx-2 navActive" : "mx-2"}>
-					    <span onClick={() => setCurrentTab("about")}>About Us</span></NavDropdown.Item>
-              <NavDropdown.Item id="nav-item-links" className={currentTab === "contact" ? "mx-2 navActive" : "mx-2"}>
-					    <span onClick={() => setCurrentTab("contact")}>Contact Us</span></NavDropdown.Item>
+              <NavDropdown.Item id="nav-item-links">
+                {''}
+                <Link to="/about">About Us</Link>   
+              </NavDropdown.Item>
+              <NavDropdown.Item id="nav-item-links">
+                {''}
+                <Link to="/contact">Contact Us</Link>
+              </NavDropdown.Item>
               </Container>
             </NavDropdown>
             <Nav.Link id="nav-links" className={currentTab === "services" ? "mx-2 navActive" : "mx-2"}>

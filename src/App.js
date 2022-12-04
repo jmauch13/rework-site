@@ -1,5 +1,5 @@
-
 import React, { useState } from 'react';
+import { Routes, Route, Link, BrowserRouter } from 'react-router-dom';
 import './index.css';
 import Header from './components/Header';
 import Landing from './components/Landing';
@@ -21,62 +21,10 @@ import Services from './components/Services';
 
 
 function App() {
-
-    
-    const [currentTab, setCurrentTab] = useState("landing");
-
-	// This function checks to see which tab is selected and then generates the appropriate tab.
-	const renderTab = () => {
-		switch (currentTab) {
-			case "landing":
-				return <Landing />;
-			case "about":
-				return <About />;
-			case "contact":
-				return <Contact />;
-			case "biographies":
-				return <Biographies />;
-            case "cart":
-                return <Cart />;
-            case "television":
-                return <Television />;
-            case "transcript":
-                return <Transcript />;
-            case "video":
-                return <Video />;
-            case "request":
-                return <Request />;
-            case "webcast":
-                return <Webcast />;
-            case "services":
-                return <Services />;
-            case "lfooter":
-                return <Lfooter />
-			default:
-				return null;
-		}
-	};
-    return (
-		<div>
-			<div className="mobile-header">
-				<Header currentTab={currentTab} setCurrentTab={setCurrentTab}></Header>
-			</div>
-			<div>
-				<main>{renderTab()}</main>
-			</div>
-		</div>
-	);
-}
-
-    export default App;
-
-      /*return (
+    return(
         <>
-            
-            <Header />
-        
-        
-            <div className='pages'>
+            <BrowserRouter>
+    
                 <Routes>
                     <Route exact path='/' element={<Landing />} />
                     <Route path='/about' element={<About />} />
@@ -92,11 +40,11 @@ function App() {
                     <Route path='/lfooter' element={<Lfooter />} />
                     <Route path='/services' element={<Services />} />
                 </Routes>
-            </div>
+            </BrowserRouter>
         
         </>
-    )    
+    );    
         
     }
-*/
+export default App;
     
