@@ -1,5 +1,6 @@
 import React from 'react';
-import { Route, Routes } from 'react-router-dom';
+import React, { useState } from 'react';
+//import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import './index.css';
 import Header from './components/Header';
@@ -24,7 +25,57 @@ import Services from './components/Services';
 function App() {
 
     
-      return (
+    const [currentTab, setCurrentTab] = useState("landing");
+
+	// This function checks to see which tab is selected and then generates the appropriate tab.
+	const renderTab = () => {
+		switch (currentTab) {
+			case "landing":
+				return <Landing />;
+			case "about":
+				return <About />;
+			case "contact":
+				return <Contact />;
+			case "biographies":
+				return <Biographies />;
+            case "cart":
+                return <Cart />;
+            case "television":
+                return <Television />;
+            case "transcript":
+                return <Transcript />;
+            case "video":
+                return <Video />;
+            case "request":
+                return <Request />;
+            case "webcast":
+                return <Webcast />;
+            case "services":
+                return <Services />;
+            case "lfooter":
+                return <Lfooter />
+			default:
+				return null;
+		}
+	};
+    return (
+		<div>
+			<div className="mobile-header">
+				<Header currentTab={currentTab} setCurrentTab={setCurrentTab}></Header>
+			</div>
+			<div>
+				<main>{renderTab()}</main>
+			</div>
+			<div>
+				<Footer></Footer>
+			</div>
+		</div>
+	);
+}
+
+    export default App;
+
+      /*return (
         <>
             
             <Header />
@@ -52,5 +103,5 @@ function App() {
     )    
         
     }
+*/
     
-export default App;
