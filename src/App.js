@@ -23,6 +23,7 @@ import Services from './components/Services';
 function App() {
     return(
         <>
+        <Header />
             <BrowserRouter>
     
                 <Routes>
