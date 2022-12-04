@@ -1,8 +1,5 @@
-import React from 'react';
+
 import React, { useState } from 'react';
-//import { Route, Routes } from 'react-router-dom';
-import './App.css';
-import './index.css';
 import Header from './components/Header';
 import Landing from './components/Landing';
 import Contact from './components/Contact';
