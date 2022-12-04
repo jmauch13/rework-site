@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/rework-site/static/css/main.7c968597.css",
-    "main.js": "/rework-site/static/js/main.cae8444a.js",
+    "main.js": "/rework-site/static/js/main.a654e5a6.js",
     "static/js/787.4085ce97.chunk.js": "/rework-site/static/js/787.4085ce97.chunk.js",
     "static/media/subtitles.jpg": "/rework-site/static/media/subtitles.c782cc163d61fabf599b.jpg",
     "static/media/zoom.jpg": "/rework-site/static/media/zoom.d8f7bfeed29da134899d.jpg",
@@ -17,11 +17,11 @@
     "static/media/Jane.jpg": "/rework-site/static/media/Jane.3040d664a195e53ed1a0.jpg",
     "index.html": "/rework-site/index.html",
     "main.7c968597.css.map": "/rework-site/static/css/main.7c968597.css.map",
-    "main.cae8444a.js.map": "/rework-site/static/js/main.cae8444a.js.map",
+    "main.a654e5a6.js.map": "/rework-site/static/js/main.a654e5a6.js.map",
     "787.4085ce97.chunk.js.map": "/rework-site/static/js/787.4085ce97.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7c968597.css",
-    "static/js/main.cae8444a.js"
+    "static/js/main.a654e5a6.js"
   ]
 }
