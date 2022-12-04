@@ -1,5 +1,6 @@
 
 import React, { useState } from 'react';
+import './index.css';
 import Header from './components/Header';
 import Landing from './components/Landing';
 import Contact from './components/Contact';
@@ -29,7 +30,7 @@ function App() {
 		switch (currentTab) {
 			case "landing":
 				return <Landing />;
-			case "about":
+			case "/about":
 				return <About />;
 			case "contact":
 				return <Contact />;
@@ -62,9 +63,6 @@ function App() {
 			</div>
 			<div>
 				<main>{renderTab()}</main>
-			</div>
-			<div>
-				<Footer></Footer>
 			</div>
 		</div>
 	);
