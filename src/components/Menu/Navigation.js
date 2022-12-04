@@ -8,9 +8,12 @@ import request from '../../assets/request_1.gif';
 import Container from 'react-bootstrap/Container';
 
 
-function Navigation() {
+function Navigation(props) {
+  const { currentTab, setCurrentTab } = props;
+
   return (
     
+
       <Navbar className="navigation">
           <Navbar.Brand className="logo" href="/"><img src={logo} alt='logo'
           style={{
@@ -18,27 +21,26 @@ function Navigation() {
           }} /></Navbar.Brand>
           <Nav>
             <Nav.Link id="nav-links" href="/">Home</Nav.Link>
-            <NavDropdown title="About" id="nav-links">
-              <Container className='dropdown-box'>
-              <NavDropdown.Item id="nav-item-links" href="/about">About Us</NavDropdown.Item>
-              <NavDropdown.Item id="nav-item-links" href="/contact">Contact Us</NavDropdown.Item>
+              <NavDropdown title="About" id="nav-links">
+                <Container className='dropdown-box'>
+              <NavDropdown.Item id="nav-item-links" className={currentTab === "about" ? "mx-2 navActive" : "mx-2"}>
+					    <span onClick={() => setCurrentTab("about")}>About Us</span></NavDropdown.Item>
+              <NavDropdown.Item id="nav-item-links" className={currentTab === "contact" ? "mx-2 navActive" : "mx-2"}>
+					    <span onClick={() => setCurrentTab("contact")}>Contact Us</span></NavDropdown.Item>
               </Container>
             </NavDropdown>
-            <Nav.Link id="nav-links" href="/services">Services</Nav.Link>
-            {/*<NavDropdown title="Services" id="nav-links">
-              <NavDropdown.Item id="nav-item-links" href="/cart">Remote CART</NavDropdown.Item>
-              <NavDropdown.Item id="nav-item-links" href="/television">Television Captioning</NavDropdown.Item>
-              <NavDropdown.Item id="nav-item-links" href="/transcript">Transcription &#38; Translation</NavDropdown.Item>
-              <NavDropdown.Item id="nav-item-links" href="/video">Video Production</NavDropdown.Item>
-              <NavDropdown.Item id="nav-item-links" href="/webcast">Webcasts</NavDropdown.Item>
-        </NavDropdown>*/}
-            <Nav.Link id="nav-links" href="/request"><img src={request} alt='logo'
+            <Nav.Link id="nav-links" className={currentTab === "services" ? "mx-2 navActive" : "mx-2"}>
+					    <span onClick={() => setCurrentTab("services")}>Services</span></Nav.Link>
+           
+            <Nav.Link id="nav-links" className={currentTab === "request" ? "mx-2 navActive" : "mx-2"}>
+					    <span onClick={() => setCurrentTab("request")}><img src={request} alt='logo'
             style={{
             width: '200px',
             height: '80px',
             border: '4px solid lightgray',
             marginLeft: '310%'
-            }} /></Nav.Link>
+            }} /></span>
+            </Nav.Link>
           </Nav>
       </Navbar>
 

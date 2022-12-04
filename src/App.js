@@ -30,7 +30,7 @@ function App() {
 		switch (currentTab) {
 			case "landing":
 				return <Landing />;
-			case "/about":
+			case "about":
 				return <About />;
 			case "contact":
 				return <Contact />;
