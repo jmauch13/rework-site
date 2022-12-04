@@ -9,8 +9,8 @@ import request from '../../assets/request_1.gif';
 import Container from 'react-bootstrap/Container';
 
 
-function Navigation(props) {
-  const { currentTab, setCurrentTab } = props;
+function Navigation() {
+  
 
   return (
     
@@ -37,17 +37,19 @@ function Navigation(props) {
               </NavDropdown.Item>
               </Container>
             </NavDropdown>
-            <Nav.Link id="nav-links" className={currentTab === "services" ? "mx-2 navActive" : "mx-2"}>
-					    <span onClick={() => setCurrentTab("services")}>Services</span></Nav.Link>
+            <Nav.Link id="nav-links">
+              <Link to="/services">Services</Link>
+            </Nav.Link>
            
-            <Nav.Link id="nav-links" className={currentTab === "request" ? "mx-2 navActive" : "mx-2"}>
-					    <span onClick={() => setCurrentTab("request")}><img src={request} alt='logo'
+            <Nav.Link id="nav-links">
+              <Link to="/request">
+                <img src={request} alt='logo'
             style={{
             width: '200px',
             height: '80px',
             border: '4px solid lightgray',
             marginLeft: '310%'
-            }} /></span>
+            }} /></Link>
             </Nav.Link>
           </Nav>
       </Navbar>

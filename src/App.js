@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Routes, Route, Link, BrowserRouter } from 'react-router-dom';
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
 import './index.css';
 import Header from './components/Header';
 import Landing from './components/Landing';
@@ -24,7 +24,7 @@ function App() {
     return(
         <>
         <Header />
-            <BrowserRouter>
+        
     
                 <Routes>
                     <Route exact path='/' element={<Landing />} />
@@ -41,7 +41,7 @@ function App() {
                     <Route path='/lfooter' element={<Lfooter />} />
                     <Route path='/services' element={<Services />} />
                 </Routes>
-            </BrowserRouter>
+        
         
         </>
     );    
