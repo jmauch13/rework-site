@@ -15,6 +15,8 @@ import Biographies from './components/Biographies';
 import Footer from './components/Footer';
 import Lfooter from './components/Lfooter';
 import Services from './components/Services';
+import Navigation from './components/Menu/Navigation';
+import Sidebar from './components/NavBar/Sidebar';
 
 
 
@@ -40,6 +42,8 @@ function App() {
                     <Route path='/footer' element={<Footer />} />
                     <Route path='/lfooter' element={<Lfooter />} />
                     <Route path='/services' element={<Services />} />
+                    <Route path='/navigation' element={<Navigation />} />
+                    <Route path='/sidebar' element={<Sidebar />} />
                 </Routes>
         
         
