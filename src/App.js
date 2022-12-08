@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './index.css';
 import Header from './components/Header';
 import Landing from './components/Landing';
@@ -15,20 +15,20 @@ import Biographies from './components/Biographies';
 import Footer from './components/Footer';
 import Lfooter from './components/Lfooter';
 import Services from './components/Services';
-import Navigation from './components/Menu/Navigation';
-import Sidebar from './components/NavBar/Sidebar';
+//import Navigation from './components/Menu/Navigation';
+//import Sidebar from './components/NavBar/Sidebar';
 
 
 
 
 
-function App() {
-    return(
-        <>
+const App = () => { 
+    return (
+            <>
         <Header />
-        
-    
-                <Routes>
+                <BrowserRouter>
+                    
+                    <Routes>
                     <Route exact path='/' element={<Landing />} />
                     <Route path='/about' element={<About />} />
                     <Route path='/television' element={<Television />} />
@@ -42,14 +42,15 @@ function App() {
                     <Route path='/footer' element={<Footer />} />
                     <Route path='/lfooter' element={<Lfooter />} />
                     <Route path='/services' element={<Services />} />
-                    <Route path='/navigation' element={<Navigation />} />
-                    <Route path='/sidebar' element={<Sidebar />} />
-                </Routes>
-        
+                    </Routes>
+                    
+
+                </BrowserRouter>
         
         </>
-    );    
         
+    );    
     }
+    
 export default App;
     

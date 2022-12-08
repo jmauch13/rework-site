@@ -11,10 +11,12 @@ import stenomachine from '../../assets/steno2.jpg';
 //import slogan from '../../assets/slogan.gif';
 import Lfooter from '../Lfooter';
 
+
 function Landing() {
     return (
+        <>
         
-    <section className='landing-row'>
+        <section className='landing-row'>
         
             <div className='logo'>
                 <p>
@@ -65,7 +67,7 @@ function Landing() {
         <Lfooter />
         </section>
 
-       
+       </>
        
     
 
