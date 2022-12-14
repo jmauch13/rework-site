@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/rework-site/static/css/main.f90d7409.css",
-    "main.js": "/rework-site/static/js/main.a38d2b07.js",
-    "static/media/subtitles.jpg": "/rework-site/static/media/subtitles.c782cc163d61fabf599b.jpg",
-    "static/media/zoom.jpg": "/rework-site/static/media/zoom.d8f7bfeed29da134899d.jpg",
-    "static/media/cart.jpeg": "/rework-site/static/media/cart.811096837a8dc464a398.jpeg",
-    "static/media/translate.jpg": "/rework-site/static/media/translate.c045f1ef105c1f095948.jpg",
-    "static/media/Wanda.jpg": "/rework-site/static/media/Wanda.e0da77eb58999ce16085.jpg",
-    "static/media/Cindy.jpg": "/rework-site/static/media/Cindy.d55cb208843cfc6c36a2.jpg",
-    "static/media/steno2.jpg": "/rework-site/static/media/steno2.6b1ec4ace649bc50d3d0.jpg",
-    "static/media/bidrequest_realtime.pdf": "/rework-site/static/media/bidrequest_realtime.935c1d06f0be90c7fc28.pdf",
-    "static/media/bidrequest_offline.pdf": "/rework-site/static/media/bidrequest_offline.0ddba8efd084f7ff024d.pdf",
-    "static/media/kala.jpg": "/rework-site/static/media/kala.a0af385c0912ba1fe772.jpg",
-    "static/media/cc_on_tv.jpeg": "/rework-site/static/media/cc_on_tv.2feb42cb4155c0f0b5b6.jpeg",
-    "static/media/Jane.jpg": "/rework-site/static/media/Jane.3040d664a195e53ed1a0.jpg",
-    "index.html": "/rework-site/index.html",
-    "main.f90d7409.css.map": "/rework-site/static/css/main.f90d7409.css.map",
-    "main.a38d2b07.js.map": "/rework-site/static/js/main.a38d2b07.js.map"
+    "main.css": "/jmauch13/rework-site/static/css/main.f90d7409.css",
+    "main.js": "/jmauch13/rework-site/static/js/main.109dc9c5.js",
+    "static/media/subtitles.jpg": "/jmauch13/rework-site/static/media/subtitles.c782cc163d61fabf599b.jpg",
+    "static/media/zoom.jpg": "/jmauch13/rework-site/static/media/zoom.d8f7bfeed29da134899d.jpg",
+    "static/media/cart.jpeg": "/jmauch13/rework-site/static/media/cart.811096837a8dc464a398.jpeg",
+    "static/media/translate.jpg": "/jmauch13/rework-site/static/media/translate.c045f1ef105c1f095948.jpg",
+    "static/media/Wanda.jpg": "/jmauch13/rework-site/static/media/Wanda.e0da77eb58999ce16085.jpg",
+    "static/media/Cindy.jpg": "/jmauch13/rework-site/static/media/Cindy.d55cb208843cfc6c36a2.jpg",
+    "static/media/steno2.jpg": "/jmauch13/rework-site/static/media/steno2.6b1ec4ace649bc50d3d0.jpg",
+    "static/media/bidrequest_realtime.pdf": "/jmauch13/rework-site/static/media/bidrequest_realtime.935c1d06f0be90c7fc28.pdf",
+    "static/media/bidrequest_offline.pdf": "/jmauch13/rework-site/static/media/bidrequest_offline.0ddba8efd084f7ff024d.pdf",
+    "static/media/kala.jpg": "/jmauch13/rework-site/static/media/kala.a0af385c0912ba1fe772.jpg",
+    "static/media/cc_on_tv.jpeg": "/jmauch13/rework-site/static/media/cc_on_tv.2feb42cb4155c0f0b5b6.jpeg",
+    "static/media/Jane.jpg": "/jmauch13/rework-site/static/media/Jane.3040d664a195e53ed1a0.jpg",
+    "index.html": "/jmauch13/rework-site/index.html",
+    "main.f90d7409.css.map": "/jmauch13/rework-site/static/css/main.f90d7409.css.map",
+    "main.109dc9c5.js.map": "/jmauch13/rework-site/static/js/main.109dc9c5.js.map"
   },
   "entrypoints": [
     "static/css/main.f90d7409.css",
-    "static/js/main.a38d2b07.js"
+    "static/js/main.109dc9c5.js"
   ]
 }
