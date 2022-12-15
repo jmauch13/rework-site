@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/rework-site/static/css/main.f90d7409.css",
-    "main.js": "/rework-site/static/js/main.76d97964.js",
+    "main.js": "/rework-site/static/js/main.c8afc032.js",
     "static/js/787.4085ce97.chunk.js": "/rework-site/static/js/787.4085ce97.chunk.js",
     "static/media/steno2.jpg": "/rework-site/static/media/steno2.6b1ec4ace649bc50d3d0.jpg",
     "index.html": "/rework-site/index.html",
     "main.f90d7409.css.map": "/rework-site/static/css/main.f90d7409.css.map",
-    "main.76d97964.js.map": "/rework-site/static/js/main.76d97964.js.map",
+    "main.c8afc032.js.map": "/rework-site/static/js/main.c8afc032.js.map",
     "787.4085ce97.chunk.js.map": "/rework-site/static/js/787.4085ce97.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f90d7409.css",
-    "static/js/main.76d97964.js"
+    "static/js/main.c8afc032.js"
   ]
 }
