@@ -3,29 +3,42 @@ import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';*/
 import './menu.css';
-/*import logo from '../../assets/capsolutions.gif';
-import request from '../../assets/request_1.gif';
-import Container from 'react-bootstrap/Container';*/
+import logo from '../../assets/capsolutions.gif';
+//import request from '../../assets/request_1.gif';
+//import Container from 'react-bootstrap/Container';*/
 
 function Navigation(props) {
 	const { currentTab, setCurrentTab } = props;
 
 	return (
-		<nav>
+		<nav className='navigation'>
+      <div className="logo" href="/"><img src={logo} alt='logo'
+          style={{
+            border: '4px solid lightgray'
+          }} />
+          </div>
 			<ul className="flex-row mobile-view">
-				<li className={currentTab === "landing" ? "mx-2 navActive" : "mx-2"}>
-					<span onClick={() => setCurrentTab("landing")}>""</span>
+				<li id="nav-links" className={currentTab === "landing" ? "mx-2 navActive" : "mx-2"}> 
+					<span onClick={() => setCurrentTab("landing")}>Home</span>
 				</li>
-				<li className={currentTab === "about" ? "mx-2 navActive" : "mx-2"}>
+				<li id="nav-links" className={currentTab === "about" ? "mx-2 navActive" : "mx-2"}>
 					<span onClick={() => setCurrentTab("about")}>About</span>
 				</li>
-				<li className={currentTab === "contact" ? "mx-2 navActive" : "mx-2"}>
+				<li id="nav-links" className={currentTab === "contact" ? "mx-2 navActive" : "mx-2"}>
 					<span onClick={() => setCurrentTab("contact")}>Contact</span>
 				</li>
-				<li className={currentTab === "cart" ? "mx-2 navActive" : "mx-2"}>
+				<li id="nav-links" className={currentTab === "cart" ? "mx-2 navActive" : "mx-2"}>
 					<span onClick={() => setCurrentTab("cart")}>Cart</span>
 				</li>
 			</ul>
+      <div id="nav-links" href="/request"><img src={request} alt='logo'
+            style={{
+            width: '200px',
+            height: '80px',
+            border: '4px solid lightgray',
+            marginLeft: '310%'
+            }} />
+            </div>
 		</nav>
 	);
 }
