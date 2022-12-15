@@ -1,16 +1,18 @@
 {
   "files": {
     "main.css": "/rework-site/static/css/main.f90d7409.css",
-    "main.js": "/rework-site/static/js/main.c8afc032.js",
+    "main.js": "/rework-site/static/js/main.4e3409a9.js",
     "static/js/787.4085ce97.chunk.js": "/rework-site/static/js/787.4085ce97.chunk.js",
     "static/media/steno2.jpg": "/rework-site/static/media/steno2.6b1ec4ace649bc50d3d0.jpg",
+    "static/media/bidrequest_realtime.pdf": "/rework-site/static/media/bidrequest_realtime.935c1d06f0be90c7fc28.pdf",
+    "static/media/bidrequest_offline.pdf": "/rework-site/static/media/bidrequest_offline.0ddba8efd084f7ff024d.pdf",
     "index.html": "/rework-site/index.html",
     "main.f90d7409.css.map": "/rework-site/static/css/main.f90d7409.css.map",
-    "main.c8afc032.js.map": "/rework-site/static/js/main.c8afc032.js.map",
+    "main.4e3409a9.js.map": "/rework-site/static/js/main.4e3409a9.js.map",
     "787.4085ce97.chunk.js.map": "/rework-site/static/js/787.4085ce97.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f90d7409.css",
-    "static/js/main.c8afc032.js"
+    "static/js/main.4e3409a9.js"
   ]
 }
