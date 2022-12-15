@@ -16,7 +16,10 @@ function Header(props) {
             <div id='page-wrap'>
     </div>*/}
 
-        <Navigation />
+<Navigation
+					currentTab={currentTab}
+					setCurrentTab={setCurrentTab}
+				></Navigation>
     
         
         <SideBar
