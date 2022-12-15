@@ -11,7 +11,7 @@ import Cart from './components/Cart';
 //import Transcript from './components/Transcript';
 //import Video from './components/Video';
 //import Webcast from './components/Webcast';
-//import Request from './components/Request';
+import Request from './components/Request';
 //import Biographies from './components/Biographies';
 import Footer from './components/Footer';
 //import Lfooter from './components/Lfooter';
@@ -33,6 +33,8 @@ function App() {
 				return <Contact />;
 			case "cart":
 				return <Cart />;
+            case "request":
+                return <Request />;
 			default:
 				return null;
 		}
