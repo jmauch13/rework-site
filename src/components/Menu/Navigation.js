@@ -1,47 +1,47 @@
 import React from 'react';
-/*import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';*/
+//import Nav from 'react-bootstrap/Nav';
+//import Navbar from 'react-bootstrap/Navbar';
+//import NavDropdown from 'react-bootstrap/NavDropdown';
 import './menu.css';
 import logo from '../../assets/capsolutions.gif';
 import request_logo from '../../assets/request_1.gif';
 //import Request from '../Request';
-//import Container from 'react-bootstrap/Container';*/
+//import Container from 'react-bootstrap/Container';
 
 function Navigation(props) {
 	const { currentTab, setCurrentTab } = props;
 
 	return (
 		<nav className='navigation'>
-      <div className="logo" href="/"><img src={logo} alt='logo'
+      <ul>
+      <li className="logo"><img src={logo} alt='logo'
           style={{
             border: '4px solid lightgray'
           }} />
-          </div>
-			<ul className="flex-row mobile-view">
-				<li id="nav-links" className={currentTab === "landing" ? "mx-2 navActive" : "mx-2"}> 
-					<span onClick={() => setCurrentTab("landing")}>Home</span>
+          </li>
+				<li id="nav-links" className={currentTab === "/landing"}> 
+					<span onClick={() => setCurrentTab("/landing")}>Home</span>
 				</li>
-				<li id="nav-links" className={currentTab === "about" ? "mx-2 navActive" : "mx-2"}>
-					<span onClick={() => setCurrentTab("about")}>About</span>
+				<li id="nav-links" className={currentTab === "/about"}>
+					<span onClick={() => setCurrentTab("/about")}>About</span>
 				</li>
-				<li id="nav-links" className={currentTab === "contact" ? "mx-2 navActive" : "mx-2"}>
-					<span onClick={() => setCurrentTab("contact")}>Contact</span>
+				<li id="nav-links" className={currentTab === "/contact"}>
+					<span onClick={() => setCurrentTab("/contact")}>Contact</span>
 				</li>
-				<li id="nav-links" className={currentTab === "cart" ? "mx-2 navActive" : "mx-2"}>
-					<span onClick={() => setCurrentTab("cart")}>Cart</span>
-				</li>
-			</ul>
-      <div id="nav-links" classname={currentTab === "request"}> 
-      <span onClick={() => setCurrentTab("request")}>
+				<li id="nav-links" classname={currentTab === "/services"}>
+          <span onClick={() => setCurrentTab("/services")}>Services</span>
+        </li>
+      <li id="nav-links" classname={currentTab === "/request"}> 
+      <span onClick={() => setCurrentTab("/request")}>
         <img src={request_logo} alt='logo'
             style={{
             width: '200px',
             height: '80px',
             border: '4px solid lightgray',
-            marginLeft: '310%'
+            marginLeft: '240%'
             }} /></span>
-            </div>
+            </li>
+            </ul>
 		</nav>
 	);
 }

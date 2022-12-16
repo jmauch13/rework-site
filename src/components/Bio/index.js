@@ -7,7 +7,7 @@ import Container from 'react-bootstrap/Container';
 import Footer from '../Footer';
 
 
-function Biographies() {
+function Bio() {
     return (
         <Container fluid className='biography'>
             <h1>Our Team</h1>
@@ -73,4 +73,4 @@ function Biographies() {
     )
 }
 
-export default Biographies;
+export default Bio;

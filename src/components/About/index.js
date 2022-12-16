@@ -10,7 +10,7 @@ function About() {
     return (
         <Container fluid>
             <div className='mb-2'>
-                <Button variant='primary' size='lg' href="/biographies">Our Team</Button>
+                <Button variant='primary' size='lg' href="/bio">Our Team</Button>
             </div>
 
             <div className='about-header'>
