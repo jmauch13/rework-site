@@ -1,18 +1,26 @@
 {
   "files": {
-    "main.css": "/rework-site/static/css/main.f90d7409.css",
-    "main.js": "/rework-site/static/js/main.4e3409a9.js",
-    "static/js/787.4085ce97.chunk.js": "/rework-site/static/js/787.4085ce97.chunk.js",
-    "static/media/steno2.jpg": "/rework-site/static/media/steno2.6b1ec4ace649bc50d3d0.jpg",
+    "main.css": "/rework-site/static/css/main.65538523.css",
+    "main.js": "/rework-site/static/js/main.2cd60c1d.js",
+    "static/media/subtitles.jpg": "/rework-site/static/media/subtitles.c782cc163d61fabf599b.jpg",
+    "static/media/zoom.jpg": "/rework-site/static/media/zoom.d8f7bfeed29da134899d.jpg",
+    "static/media/cart.jpeg": "/rework-site/static/media/cart.811096837a8dc464a398.jpeg",
+    "static/media/translate.jpg": "/rework-site/static/media/translate.c045f1ef105c1f095948.jpg",
+    "static/media/Wanda.jpg": "/rework-site/static/media/Wanda.e0da77eb58999ce16085.jpg",
+    "static/media/Cindy.jpg": "/rework-site/static/media/Cindy.d55cb208843cfc6c36a2.jpg",
+    "static/media/steno.jpg": "/rework-site/static/media/steno.4cf941b987339292028a.jpg",
     "static/media/bidrequest_realtime.pdf": "/rework-site/static/media/bidrequest_realtime.935c1d06f0be90c7fc28.pdf",
     "static/media/bidrequest_offline.pdf": "/rework-site/static/media/bidrequest_offline.0ddba8efd084f7ff024d.pdf",
+    "static/media/kala.jpg": "/rework-site/static/media/kala.a0af385c0912ba1fe772.jpg",
+    "static/media/cc_on_tv.jpeg": "/rework-site/static/media/cc_on_tv.2feb42cb4155c0f0b5b6.jpeg",
+    "static/media/Jane.jpg": "/rework-site/static/media/Jane.3040d664a195e53ed1a0.jpg",
+    "static/media/C_logo_2.gif": "/rework-site/static/media/C_logo_2.236da324bb61e3269b08.gif",
     "index.html": "/rework-site/index.html",
-    "main.f90d7409.css.map": "/rework-site/static/css/main.f90d7409.css.map",
-    "main.4e3409a9.js.map": "/rework-site/static/js/main.4e3409a9.js.map",
-    "787.4085ce97.chunk.js.map": "/rework-site/static/js/787.4085ce97.chunk.js.map"
+    "main.65538523.css.map": "/rework-site/static/css/main.65538523.css.map",
+    "main.2cd60c1d.js.map": "/rework-site/static/js/main.2cd60c1d.js.map"
   },
   "entrypoints": [
-    "static/css/main.f90d7409.css",
-    "static/js/main.4e3409a9.js"
+    "static/css/main.65538523.css",
+    "static/js/main.2cd60c1d.js"
   ]
 }
