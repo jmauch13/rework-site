@@ -5,7 +5,6 @@ import './App.css';
 import Homepage from './pages/Homepage';
 import Aboutpage from './pages/Aboutpage';
 import Bio from './pages/Bio';
-import Footer from './components/Footer';
 import Lfooter from './components/Lfooter';
 import Request from './pages/Request';
 import Transcript from './pages/Transcript';
@@ -33,10 +32,7 @@ function App() {
 			<Route path="/bio">
 				<Bio />
 			</Route>
-			<Route path="/footer">
-				<Footer />
-			</Route>
-			<Route path="/lfooter">
+	        <Route path="/lfooter">
 				<Lfooter />
 			</Route>
 			<Route path="/contact">
