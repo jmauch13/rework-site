@@ -21,7 +21,7 @@ function App() {
 	return (
 
 
-		<BrowserRouter basename="/index.html">
+		<BrowserRouter>
 
 			<Route exact path="/">
 				<Homepage />
