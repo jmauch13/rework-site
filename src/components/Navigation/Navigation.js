@@ -1,14 +1,13 @@
 import React from 'react';
-//import Nav from 'react-bootstrap/Nav';
-//import Navbar from 'react-bootstrap/Navbar';
-//import NavDropdown from 'react-bootstrap/NavDropdown';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
 import './menu.css';
 import logo from '../../assets/capsolutions.gif';
 import request_logo from '../../assets/request_1.gif';
-//import Request from '../Request';
-//import Container from 'react-bootstrap/Container';
+import Container from 'react-bootstrap/Container';
 
-function Navigation(props) {
+/*function Navigation(props) {
 	const { currentTab, setCurrentTab } = props;
 
 	return (
@@ -19,8 +18,8 @@ function Navigation(props) {
             border: '4px solid lightgray'
           }} />
           </li>
-				<li id="nav-links" className={currentTab === "/landing"}> 
-					<span onClick={() => setCurrentTab("/landing")}>Home</span>
+				<li id="nav-links" className={currentTab === "/homepage"}> 
+					<span onClick={() => setCurrentTab("/homepage")}>Home</span>
 				</li>
 				<li id="nav-links" className={currentTab === "/about"}>
 					<span onClick={() => setCurrentTab("/about")}>About</span>
@@ -45,9 +44,9 @@ function Navigation(props) {
 		</nav>
 	);
 }
-export default Navigation;
+export default Navigation;*/
 
-/*function Navigation() {
+function Navigation() {
 
   return (
     
@@ -59,19 +58,27 @@ export default Navigation;
           <Nav>
             <Nav.Link id="nav-links" href="/">Home</Nav.Link>
             <NavDropdown title="About" id="nav-links">
-              <Container className='dropdown-box'>
+              <Container className='dropdown-box' id='about-dropdown'>
               <NavDropdown.Item id="nav-item-links" href="/about">About Us</NavDropdown.Item>
               <NavDropdown.Item id="nav-item-links" href="/contact">Contact Us</NavDropdown.Item>
               </Container>
             </NavDropdown>
-            <Nav.Link id="nav-links" href="/services">Services</Nav.Link>
+            <NavDropdown title="Services" id="nav-links">
+            <Container className='dropdown-box'>
+            <NavDropdown.Item id="nav-item-links" href="/television">Television Captioning</NavDropdown.Item>
+            <NavDropdown.Item id="nav-item-links" href="/cart">CART Services</NavDropdown.Item>
+            <NavDropdown.Item id="nav-item-links" href="/webcast">Webcasts</NavDropdown.Item>
+            <NavDropdown.Item id="nav-item-links" href="/transcript">Transcription &#38; Translation</NavDropdown.Item>
+            <NavDropdown.Item id="nav-item-links" href="/video">Video Production</NavDropdown.Item>
+            </Container>
+            </NavDropdown>
             
-            <Nav.Link id="nav-links" href="/request"><img src={request} alt='logo'
+            <Nav.Link id="nav-links" href="/request"><img src={request_logo} alt='logo'
             style={{
-            width: '200px',
+            width: '190px',
             height: '80px',
             border: '4px solid lightgray',
-            marginLeft: '310%'
+            marginLeft: '275%'
             }} /></Nav.Link>
           </Nav>
       </Navbar>
@@ -79,4 +86,4 @@ export default Navigation;
  )   
 }
 
-export default Navigation;*/
+export default Navigation;

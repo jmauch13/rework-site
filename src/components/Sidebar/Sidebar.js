@@ -3,6 +3,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import './Sidebar.css';
 import logo from '../../assets/capsolutions.gif';
+import { NavDropdown } from 'react-bootstrap';
 
 
 
@@ -17,14 +18,14 @@ function Sidebar() {
           <Nav>
             <Nav.Link id="links" textAlign="center" href="/">Home</Nav.Link>
             <Nav.Link id="links" href="/about">About Us</Nav.Link>
-            <Nav.Link id="links" href="/services">Services</Nav.Link>
-            {/*<NavDropdown id="links" title="Services">
+            
+            <NavDropdown id="links" title="Services">
               <NavDropdown.Item id="item-links" href="/cart">Remote CART</NavDropdown.Item>
               <NavDropdown.Item id="item-links" href="/television">Television Captioning</NavDropdown.Item>
               <NavDropdown.Item id="item-links" href="/transcript">Transcription &#38; Translation</NavDropdown.Item>
               <NavDropdown.Item id="item-links" href="/video">Video Production</NavDropdown.Item>
               <NavDropdown.Item id="item-links" href="/webcast">Webcasts</NavDropdown.Item>
-  </NavDropdown>*/}
+  </NavDropdown>
           </Nav>
           <Nav>
             <Nav.Link id="links" href="/contact">Contact Us</Nav.Link>

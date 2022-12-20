@@ -1,6 +1,6 @@
 import React from 'react';
-import SideBar from '../NavBar/Sidebar';
-import Navigation from '../Menu/Navigation';
+import SideBar from './Sidebar/Sidebar';
+import Navigation from './Navigation/Navigation';
 
 function Header(props) {
     const { currentTab, setCurrentTab } = props;
@@ -16,21 +16,21 @@ function Header(props) {
             <div id='page-wrap'>
     </div>*/}
 
-<Navigation
-					currentTab={currentTab}
-					setCurrentTab={setCurrentTab}
-				></Navigation>
-    
-        
-        <SideBar
-        currentTab={currentTab}
-        setCurrentTab={setCurrentTab}
-        >
+            <Navigation
+                currentTab={currentTab}
+                setCurrentTab={setCurrentTab}
+            ></Navigation>
 
-</SideBar>
-        
+
+            <SideBar
+                currentTab={currentTab}
+                setCurrentTab={setCurrentTab}
+            >
+
+            </SideBar>
+
         </header>
-        
+
     );
 }
 

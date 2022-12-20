@@ -1,99 +1,72 @@
-import React, { useState } from 'react';
-//import React from 'react';
-//import { BrowserRouter, Route, Routes } from 'react-router-dom';
-
-import './index.css';
-import Header from './components/Header';
-import Landing from './components/Landing';
-import Contact from './components/Contact';
-import About from './components/About';
-import Cart from './components/Cart';
-import Television from './components/Television';
-//import Transcript from './components/Transcript';
-//import Video from './components/Video';
-//import Webcast from './components/Webcast';
-import Request from './components/Request';
-import Bio from './components/Bio';
-//import Footer from './components/Footer';
-//import Lfooter from './components/Lfooter';
-import Services from './components/Services';
-//import Navigation from './components/Menu/Navigation';
-//import Sidebar from './components/NavBar/Sidebar';
+import React from 'react';
+import { BrowserRouter, Route } from 'react-router-dom';
+import './App.css';
+//import { Link } from 'react-router-dom';
+import Homepage from './pages/Homepage';
+import Aboutpage from './pages/Aboutpage';
+import Bio from './pages/Bio';
+import Footer from './components/Footer';
+import Lfooter from './components/Lfooter';
+import Request from './pages/Request';
+import Transcript from './pages/Transcript';
+import Cart from './pages/Cart';
+import Webcast from './pages/Webcast';
+import Television from './pages/Television';
+import Services from './pages/Services';
+import Contact from './pages/Contact';
+import Video from './pages/Video';
 
 
 function App() {
-	const [currentTab, setCurrentTab] = useState("/landing");
-
-	// This function checks to see which tab is selected and then generates the appropriate tab.
-	const renderTab = () => {
-		switch (currentTab) {
-			case "/landing":
-				return <Landing />;
-			case "/about":
-				return <About />;
-            case "/bio":
-                return <Bio />;
-			case "/contact":
-				return <Contact />;
-            case "/services":
-                return <Services />;
-			case "/cart":
-				return <Cart />;
-            case "/television":
-                return <Television />;
-            case "/request":
-                return <Request />;
-			default:
-				return null;
-		}
-	};
 
 	return (
-		<div>
-			<div className="mobile-header">
-				<Header currentTab={currentTab} setCurrentTab={setCurrentTab}></Header>
-			</div>
-			<div>
-				<main>{renderTab()}</main>
-			</div>
-			
-		</div>
-	);
+
+
+		<BrowserRouter basename="/index.html">
+
+			<Route exact path="/">
+				<Homepage />
+			</Route>
+			<Route path="/about">
+				<Aboutpage />
+			</Route>
+			<Route path="/bio">
+				<Bio />
+			</Route>
+			<Route path="/footer">
+				<Footer />
+			</Route>
+			<Route path="/lfooter">
+				<Lfooter />
+			</Route>
+			<Route path="/contact">
+				<Contact />
+			</Route>
+			<Route path="/request">
+				<Request />
+			</Route>
+			<Route path="/cart">
+				<Cart />
+			</Route>
+			<Route path="/television">
+				<Television />
+			</Route>
+			<Route path="/webcast">
+				<Webcast />
+			</Route>
+			<Route path="/transcript">
+				<Transcript />
+			</Route>
+			<Route path="/video">
+				<Video />
+			</Route>
+			<Route path="/services">
+				<Services />
+			</Route>
+		</BrowserRouter>
+
+	)
+
 }
 
 export default App;
-
-
-
-/*const App = () => { 
-    return (
-            <>
-        <Header />
-                <BrowserRouter>
-                    
-                    <Routes>
-                    <Route exact path='/' element={<Landing />} />
-                    <Route path='/about' element={<About />} />
-                    <Route path='/television' element={<Television />} />
-                    <Route path='/transcript' element={<Transcript />} />
-                    <Route path='/video' element={<Video />} />
-                    <Route path='/cart' element={<Cart />} />
-                    <Route path='/webcast' element={<Webcast />} />
-                    <Route path='/contact' element={<Contact />} />
-                    <Route path='/request' element={<Request />} />
-                    <Route path='/biographies' element={<Biographies />} />
-                    <Route path='/footer' element={<Footer />} />
-                    <Route path='/lfooter' element={<Lfooter />} />
-                    <Route path='/services' element={<Services />} />
-                    </Routes>
-                    
-
-                </BrowserRouter>
-        
-        </>
-        
-    );    
-    }
-    
-export default App;*/
-    
