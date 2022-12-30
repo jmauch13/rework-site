@@ -1,89 +1,63 @@
-import React from 'react';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-import './menu.css';
+import { useState } from "react";
 import logo from '../../assets/capsolutions.gif';
-import request_logo from '../../assets/request_1.gif';
-import Container from 'react-bootstrap/Container';
+import './menu.css';
 
-/*function Navigation(props) {
-	const { currentTab, setCurrentTab } = props;
-
-	return (
-		<nav className='navigation'>
-      <ul>
-      <li className="logo"><img src={logo} alt='logo'
-          style={{
-            border: '4px solid lightgray'
-          }} />
-          </li>
-				<li id="nav-links" className={currentTab === "/homepage"}> 
-					<span onClick={() => setCurrentTab("/homepage")}>Home</span>
-				</li>
-				<li id="nav-links" className={currentTab === "/about"}>
-					<span onClick={() => setCurrentTab("/about")}>About</span>
-				</li>
-				<li id="nav-links" className={currentTab === "/contact"}>
-					<span onClick={() => setCurrentTab("/contact")}>Contact</span>
-				</li>
-				<li id="nav-links" classname={currentTab === "/services"}>
-          <span onClick={() => setCurrentTab("/services")}>Services</span>
-        </li>
-      <li id="nav-links" classname={currentTab === "/request"}> 
-      <span onClick={() => setCurrentTab("/request")}>
-        <img src={request_logo} alt='logo'
-            style={{
-            width: '200px',
-            height: '80px',
-            border: '4px solid lightgray',
-            marginLeft: '240%'
-            }} /></span>
-            </li>
-            </ul>
-		</nav>
-	);
-}
-export default Navigation;*/
 
 function Navigation() {
+  const [isNavExpanded, setIsNavExpanded] = useState(false)
+
 
   return (
-    
-      <Navbar className="navigation">
-          <Navbar.Brand className="logo" href="/"><img src={logo} alt='logo'
-          style={{
-            border: '4px solid lightgray'
-          }} /></Navbar.Brand>
-          <Nav>
-            <Nav.Link id="nav-links" href="/">Home</Nav.Link>
-            <NavDropdown title="About" id="nav-links">
-              <Container className='dropdown-box' id='about-dropdown'>
-              <NavDropdown.Item id="nav-item-links" href="/about">About Us</NavDropdown.Item>
-              <NavDropdown.Item id="nav-item-links" href="/contact">Contact Us</NavDropdown.Item>
-              </Container>
-            </NavDropdown>
-            <NavDropdown title="Services" id="nav-links">
-            <Container className='dropdown-box'>
-            <NavDropdown.Item id="nav-item-links" href="/television">Television Captioning</NavDropdown.Item>
-            <NavDropdown.Item id="nav-item-links" href="/cart">CART Services</NavDropdown.Item>
-            <NavDropdown.Item id="nav-item-links" href="/webcast">Webcasts</NavDropdown.Item>
-            <NavDropdown.Item id="nav-item-links" href="/transcript">Transcription &#38; Translation</NavDropdown.Item>
-            <NavDropdown.Item id="nav-item-links" href="/video">Video Production</NavDropdown.Item>
-            </Container>
-            </NavDropdown>
-            
-            <Nav.Link id="nav-links" href="/request"><img src={request_logo} alt='logo'
-            style={{
-            width: '190px',
-            height: '80px',
-            border: '4px solid lightgray',
-            marginLeft: '275%'
-            }} /></Nav.Link>
-          </Nav>
-      </Navbar>
-
- )   
+    <nav className="navigation">
+      <a className="logo" href="/"><img src={logo} alt='logo'
+        style={{
+          border: '4px solid lightgray'
+        }} />
+		
+      </a>
+      <button
+        className="hamburger"
+        onClick={() => {
+          setIsNavExpanded(!isNavExpanded);
+        }}
+      >
+        {/* icon from Heroicons.com */}
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="h-5 w-5"
+          viewBox="0 0 20 20"
+          fill="white"
+        >
+          <path
+            fillRule="evenodd"
+            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+            clipRule="evenodd"
+          />
+        </svg>
+      </button>
+      <div
+        className={
+          isNavExpanded ? "navigation-menu expanded" : "navigation-menu"
+        }
+      >
+        <ul>
+          <li>
+            <a href="/homepage">Home</a>
+          </li>
+          <li>
+            <a href="/aboutpage">About</a>
+          </li>
+          <li>
+            <a href="/services">Services</a>
+          </li>
+          <li>
+            <a href="/contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  );
 }
+
 
 export default Navigation;

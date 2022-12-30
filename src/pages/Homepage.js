@@ -2,16 +2,12 @@ import React from 'react';
 import '../App.css';
 import { Link } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
-//import Row from 'react-bootstrap/Row';
-//import Button from 'react-bootstrap/Button';
-//import Col from 'react-bootstrap/Col';
-//import Lfooter from '../Lfooter';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import logo2gif from '../assets/C_logo_2.gif';
 import background from '../assets/steno.jpg';
 //import slogan from '../../assets/slogan.gif';
 import Lfooter from '../components/Lfooter';
-import Header from '../components/Header';
+
 
 
 
@@ -20,9 +16,6 @@ import Header from '../components/Header';
 function Homepage() {
 
     return (
-        <>
-            <Header />
-
 
             <Container fluid className='container'>
 
@@ -75,7 +68,7 @@ function Homepage() {
                     <Lfooter />
                 </footer>
             </Container>
-        </>
+        
     )
 }
 
