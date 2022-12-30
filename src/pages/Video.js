@@ -1,12 +1,11 @@
 import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Lfooter from '../components/Lfooter';
-import Header from '../components/Header';
+
 
 function Video() {
     return (
-        <>
-            <Header />
+        
             <Container fluid>
 
                 <div className='page-header'>
@@ -27,7 +26,7 @@ function Video() {
                 </div>
                 <Lfooter />
             </Container>
-        </>
+    
     )
 }
 

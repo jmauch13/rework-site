@@ -1,12 +1,11 @@
 import React from 'react';
 import Lfooter from '../components/Lfooter';
 import Container from 'react-bootstrap/Container';
-import Header from '../components/Header';
+
 
 function Cart() {
     return (
-        <>
-            <Header />
+        
             <Container fluid>
                 <div className='page-header'>
                     <h1>Remote CART Services</h1>
@@ -27,7 +26,7 @@ function Cart() {
                 <Lfooter />
 
             </Container>
-        </>
+        
     )
 }
 

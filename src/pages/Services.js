@@ -10,14 +10,13 @@ import subtitles from '../assets/subtitles.jpg';
 import translate from '../assets/translate.jpg';
 import Lfooter from '../components/Lfooter';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Header from '../components/Header';
+
 
 
 
 function Services() {
     return (
-        <>
-            <Header />
+        
             <Container className='services' fluid width='100%'>
                 <h1>Services</h1>
                 <br />
@@ -195,8 +194,6 @@ function Services() {
                     <a href="https://www.canstockphoto.com">(c) Can Stock Photo / maxxyustas</a>
                 </div>
             </Container>
-        </>
-
 
     )
 

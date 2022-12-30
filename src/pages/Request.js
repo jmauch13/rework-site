@@ -2,12 +2,10 @@ import React from 'react';
 import Lfooter from '../components/Lfooter';
 import Container from 'react-bootstrap/Container';
 import Button from 'react-bootstrap/Button';
-import Header from '../components/Header';
 
 function Request() {
     return (
-        <>
-            <Header />
+        
             <Container className='request-page'>
                 <p>Downloadable Bid Request Form</p>
                 <br />
@@ -27,7 +25,7 @@ function Request() {
                 <br />
                 <Lfooter />
             </Container>
-        </>
+    
     )
 }
 

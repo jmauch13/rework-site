@@ -1,14 +1,13 @@
 import React from 'react';
 import Lfooter from '../components/Lfooter';
 import Container from 'react-bootstrap/Container';
-import Header from '../components/Header';
+
 
 
 function Television() {
 
     return (
-        <>
-            <Header />
+
             <Container fluid>
 
                 <div className='page-header'>
@@ -39,7 +38,7 @@ function Television() {
                 </div>
                 <Lfooter />
             </Container>
-        </>
+        
     )
 }
 

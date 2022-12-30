@@ -2,12 +2,11 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Lfooter from '../components/Lfooter';
 import Button from 'react-bootstrap/Button';
-import Header from '../components/Header';
+
 
 function Contact() {
     return (
-        <>
-            <Header />
+
             <Container fluid className='contact'>
                 <p>
                     Get in Touch with us!
@@ -33,7 +32,7 @@ function Contact() {
                 <br />
                 <Lfooter />
             </Container>
-        </>
+    
     )
 }
 

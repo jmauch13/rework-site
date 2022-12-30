@@ -1,12 +1,11 @@
 import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Lfooter from '../components/Lfooter';
-import Header from '../components/Header';
+
 
 function Webcast() {
     return (
-        <>
-            <Header />
+        
             <Container fluid>
                 <div className='page-header'>
                     <h1>Webcast Services</h1>
@@ -24,7 +23,7 @@ function Webcast() {
                 <br />
                 <Lfooter />
             </Container>
-        </>
+        
     )
 }
 

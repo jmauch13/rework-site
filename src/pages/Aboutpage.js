@@ -2,15 +2,14 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Lfooter from '../components/Lfooter';
 import Button from 'react-bootstrap/Button';
-import Header from '../components/Header';
+
 
 
 
 function Aboutpage() {
 
     return (
-        <>
-            <Header />
+
             <Container fluid>
                 <div className='mb-2'>
                     <Button variant='primary' size='lg' href="/bio">Our Team</Button>
@@ -43,7 +42,7 @@ function Aboutpage() {
                 </div>
                 <Lfooter />
             </Container>
-        </>
+    
     )
 }
 

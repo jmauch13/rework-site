@@ -5,13 +5,12 @@ import Wanda from '../assets/Wanda.jpg';
 import Jane from '../assets/Jane.jpg';
 import Container from 'react-bootstrap/Container';
 import Lfooter from '../components/Lfooter';
-import Header from '../components/Header';
+
 
 
 function Bio() {
     return (
-        <>
-            <Header />
+        
             <Container fluid className='biography'>
                 <h1>Our Team</h1>
                 <div className='kala'>
@@ -73,7 +72,7 @@ function Bio() {
 
                 <Lfooter />
             </Container>
-        </>
+        
     )
 }
 
