@@ -42,7 +42,7 @@ function Navigation() {
       >
         <ul>
           <li>
-            <a href="/homepage">Home</a>
+            <a href="/">Home</a>
           </li>
           <li>
             <a href="/aboutpage">About</a>

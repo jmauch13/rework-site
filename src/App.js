@@ -30,40 +30,30 @@ export default function App() {
 	
 	  <Router>
 		<Navigation />
+		
 		  <Switch>
-			<Route exact path="/homepage">
-			  <Homepage />
-			</Route>
-			<Route path="/aboutpage">
-			  <Aboutpage />
-			</Route>
-			<Route path="/contact">
-			  <Contact />
-			</Route>
-			<Route path="/request">
-				<Request />
-			</Route>
-			<Route path="/services">
-			  <Services />
-			</Route>
-			<Route path="/television">
-			  <Television />
-			</Route>
-			<Route path="/transcript">
-			  <Transcript />
-			</Route>
-			<Route path="/video">
-			  <Video />
-			</Route>
-			<Route path="/webcast">
-			  <Webcast />
-			</Route>
-			<Route path="/cart">
-			  <Cart />
-			</Route>
-			<Route path="/bio">
-			  <Bio />
-			</Route>
+			<Route exact path="/"
+			  component={Homepage} />
+			<Route path="/aboutpage"
+				component={Aboutpage} />
+			<Route path="/contact"
+				component={Contact} />
+			<Route path="/request"
+				component={Request} />
+			<Route path="/services"
+				component={Services} />
+			<Route path="/television"
+				component={Television} />
+			<Route path="/transcript"
+				component={Transcript} />
+			<Route path="/video"
+				component={Video} />
+			<Route path="/webcast"
+				component={Webcast} />
+			<Route path="/cart"
+				component={Cart} />
+			<Route path="/bio"
+				component={Bio} />
 		  </Switch>
 	
 	  </Router>
